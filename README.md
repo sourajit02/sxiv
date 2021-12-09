@@ -1,4 +1,4 @@
-My changes - 
+**My changes**
 
 pgup to zoom in
 
@@ -11,6 +11,7 @@ up/down scrolling scrolls by 1/8 of image
 left mouse button for panning
 
 when moving between images, the image renders zoomed in scrolled to the top edge (ideal for manga/doujins)
+
 **Simple X Image Viewer**
 
 The sole purpose of sxiv is to be the perfect image viewer for me. It is free
