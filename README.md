@@ -2,9 +2,13 @@
 
 My changes - 
 pgup to zoom in
+
 pgdown to zoom out
+
 left/right arrow keys to go to prev/next image
+
 up/down scrolling scrolls by 1/8 of image
+
 lmb for panning
 
 
