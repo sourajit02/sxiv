@@ -32,7 +32,7 @@ static const double GAMMA_MAX   = 10.0;
 static const int    GAMMA_RANGE = 32;
 
 /* command i_scroll pans image 1/PAN_FRACTION of screen width/height */
-static const int PAN_FRACTION = 5;
+static const int PAN_FRACTION = 8;
 
 /* if false, pixelate images at zoom level != 100%,
  * toggled with 'a' key binding
@@ -42,7 +42,7 @@ static const bool ANTI_ALIAS = true;
 /* if true, use a checkerboard background for alpha layer,
  * toggled with 'A' key binding
  */
-static const bool ALPHA_LAYER = false;
+static const bool ALPHA_LAYER = true;
 
 #endif
 #ifdef _THUMBS_CONFIG
@@ -69,16 +69,16 @@ static const keymap_t keys[] = {
 	{ 0,            XK_r,             g_reload_image,       None },
 	{ 0,            XK_D,             g_remove_image,       None },
 	{ ControlMask,  XK_h,             g_scroll_screen,      DIR_LEFT },
-	{ ControlMask,  XK_Left,          g_scroll_screen,      DIR_LEFT },
+	{ ControlMask,  XK_Left,          i_navigate,	        -1 },
 	{ ControlMask,  XK_j,             g_scroll_screen,      DIR_DOWN },
 	{ ControlMask,  XK_Down,          g_scroll_screen,      DIR_DOWN },
 	{ ControlMask,  XK_k,             g_scroll_screen,      DIR_UP },
 	{ ControlMask,  XK_Up,            g_scroll_screen,      DIR_UP },
 	{ ControlMask,  XK_l,             g_scroll_screen,      DIR_RIGHT },
-	{ ControlMask,  XK_Right,         g_scroll_screen,      DIR_RIGHT },
-	{ 0,            XK_plus,          g_zoom,               +1 },
+	{ ControlMask,  XK_Right,         i_navigate,      	+1 },
+	{ 0,            XK_Page_Up,       g_zoom,               +1 },
 	{ 0,            XK_KP_Add,        g_zoom,               +1 },
-	{ 0,            XK_minus,         g_zoom,               -1 },
+	{ 0,            XK_Page_Down,     g_zoom,               -1 },
 	{ 0,            XK_KP_Subtract,   g_zoom,               -1 },
 	{ 0,            XK_m,             g_toggle_image_mark,  None },
 	{ 0,            XK_M,             g_mark_range,         None },
@@ -142,8 +142,8 @@ static const keymap_t keys[] = {
 /* mouse button mappings for image mode: */
 static const button_t buttons[] = {
 	/* modifiers    button            function              argument */
-	{ 0,            1,                i_cursor_navigate,    None },
-	{ 0,            2,                i_drag,               DRAG_ABSOLUTE },
+	{ 0,            2,                i_cursor_navigate,    None },
+	{ 0,            1,                i_drag,               DRAG_ABSOLUTE },
 	{ 0,            3,                g_switch_mode,        None },
 	{ 0,            4,                g_zoom,               +1 },
 	{ 0,            5,                g_zoom,               -1 },
