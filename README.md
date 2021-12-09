@@ -1,5 +1,13 @@
 ![sxiv](http://muennich.github.com/sxiv/img/logo.png "sxiv")
 
+My changes - 
+pgup to zoom in
+pgdown to zoom out
+left/right arrow keys to go to prev/next image
+up/down scrolling scrolls by 1/8 of image
+lmb for panning
+
+
 **Simple X Image Viewer**
 
 The sole purpose of sxiv is to be the perfect image viewer for me. It is free
