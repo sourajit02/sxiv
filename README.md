@@ -1,5 +1,3 @@
-![sxiv](http://muennich.github.com/sxiv/img/logo.png "sxiv")
-
 My changes - 
 pgup to zoom in
 
