@@ -1,6 +1,6 @@
 **My changes**
 
-pgup to zoom in
+pgup to zoom to 100% (equals to zoom beyond 100%)
 
 pgdown to zoom out
 
