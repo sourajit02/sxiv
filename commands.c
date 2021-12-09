@@ -282,6 +282,7 @@ bool ci_navigate(arg_t n)
 
 	if (n != fileidx) {
 		load_image(n);
+        img_pan_edge(&img, DIR_UP);
 		return true;
 	} else {
 		return false;
